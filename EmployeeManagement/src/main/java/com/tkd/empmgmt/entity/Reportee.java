@@ -13,6 +13,7 @@ public class Reportee {
 	
 	@Id
 	@GeneratedValue
+	@JsonIgnore
 	private Long id;
 	
 	@ManyToOne
@@ -31,7 +32,6 @@ public class Reportee {
 
 	public Reportee() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public Long getId() {
@@ -57,5 +57,11 @@ public class Reportee {
 	public void setReporteeId(Long reporteeId) {
 		this.reporteeId = reporteeId;
 	}
+
+	@Override
+	public String toString() {
+		return "Reportee [id=" + id + ", reporteeId=" + reporteeId + "]";
+	}
+	
 	
 }

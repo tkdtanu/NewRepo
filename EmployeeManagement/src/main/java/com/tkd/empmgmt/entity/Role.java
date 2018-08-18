@@ -59,6 +59,9 @@ public class Role {
 		this.employee = employee;
 	}
 
-	
-	
+	@Override
+	public String toString() {
+		return "Role [roleId=" + roleId + ", roleType=" + roleType + "]";
+	}
+
 }

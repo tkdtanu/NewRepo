@@ -115,5 +115,11 @@ public class Employee {
 		this.reportee = reportee;
 	}
 
+	public Employee(Long empId) {
+		super();
+		this.empId = empId;
+	}
+	
+
 	
 }
